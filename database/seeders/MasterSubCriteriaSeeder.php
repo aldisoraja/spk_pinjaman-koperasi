@@ -1,0 +1,648 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class MasterSubCriteriaSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $subkriteria = [
+
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Petani/Pekebun',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Nelayan/Perikanan',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Buruh Harian Lepas',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Buruh Tani/Perkebunan',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Buruh Nelayan/Perikanan',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Buruh Peternakan',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Pembantu Rumah Tangga',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Tukang Cukur',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Tukang Listrik',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Tukang Batu',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Tukang Kayu',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Tukang Sol Sepatu',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Tukang Las/Pandai Besi',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Tukang Jahit',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Mekanik',
+                'nilai_subkriteria' => 2,
+                'keterangan_subkriteria' => 'Cukup',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Pendeta',
+                'nilai_subkriteria' => 2,
+                'keterangan_subkriteria' => 'Cukup',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Pastor',
+                'nilai_subkriteria' => 2,
+                'keterangan_subkriteria' => 'Cukup',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Ustadz/Mubaligh',
+                'nilai_subkriteria' => 2,
+                'keterangan_subkriteria' => 'Cukup',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Sopir',
+                'nilai_subkriteria' => 2,
+                'keterangan_subkriteria' => 'Cukup',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Pensiunan',
+                'nilai_subkriteria' => 2,
+                'keterangan_subkriteria' => 'Cukup',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Biarawati',
+                'nilai_subkriteria' => 2,
+                'keterangan_subkriteria' => 'Cukup',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Tukang Gigi',
+                'nilai_subkriteria' => 2,
+                'keterangan_subkriteria' => 'Cukup',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Perangkat Desa',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Karyawan Swasta',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Karyawan Honorer',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Penata Busana',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Penata Rambut',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Penata Rias',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Wartawan',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Promotor Acara',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Bidan',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Guru',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Perawat',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Apoteker',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Penyiar Radio',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Seniman',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Pedagang',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Pegawai Negeri Sipil',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Tentara Nasional Indonesia',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Kepolisian RI',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Karyawan BUMN',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Karyawan BUMD',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Perangcang Busana',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Penerjemah',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Dosen',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Pilot',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Psikiater/Psikolog',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Penyiar Televisi',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Peneliti',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Kepala Desa',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Pelaut',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Peternak',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Akuntan',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Konsultan',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Juru Masak',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Wirausaha',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Anggota DPR-RI',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Anggota DPD',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Anggota BPK',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Presiden',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Wakil Presiden',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Anggota Mahkama Konstitusi',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Anggota Kabinet/Kementrian',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Duta Besar',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Gubernur',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Wakil Gubernur',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Bupati',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Wakil Bupati',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Walikota',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Wakil Walikota',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Anggota DPRD Provinsi',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Anggota DPRD Kabupaten/Kota',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Pengacara',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Notaris',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Arsitek',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Kontraktor',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Dokter',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Perdagangan',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 1,
+                'nama_subkriteria' => 'Industri',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 2,
+                'nama_subkriteria' => '< 1.000.000',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 2,
+                'nama_subkriteria' => '> 1.000.000 - 2.000.000',
+                'nilai_subkriteria' => 2,
+                'keterangan_subkriteria' => 'Cukup',
+            ],
+            [
+                'kriteria_id' => 2,
+                'nama_subkriteria' => '> 2.000.000 - 3.000.000',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 2,
+                'nama_subkriteria' => '> 3.000.000 - 4.500.000',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 2,
+                'nama_subkriteria' => '> 4.500.000',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 3,
+                'nama_subkriteria' => '500.000 - 5.000.000',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 3,
+                'nama_subkriteria' => '> 5.000.000 - 10.000.000',
+                'nilai_subkriteria' => 2,
+                'keterangan_subkriteria' => 'Cukup',
+            ],
+            [
+                'kriteria_id' => 3,
+                'nama_subkriteria' => '> 10.000.000 - 15.000.000',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 3,
+                'nama_subkriteria' => '> 15.000.000 - 30.000.000',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 3,
+                'nama_subkriteria' => '> 30.000.000',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 4,
+                'nama_subkriteria' => '21 - 24 Bulan',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 4,
+                'nama_subkriteria' => '16 - 20 Bulan',
+                'nilai_subkriteria' => 2,
+                'keterangan_subkriteria' => 'Cukup',
+            ],
+            [
+                'kriteria_id' => 4,
+                'nama_subkriteria' => '11 - 15 Bulan',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 4,
+                'nama_subkriteria' => '6 - 10 Bulan',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 4,
+                'nama_subkriteria' => '1 - 5 Bulan',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 5,
+                'nama_subkriteria' => 'BPKB Motor',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 5,
+                'nama_subkriteria' => 'BPKB Mobil',
+                'nilai_subkriteria' => 2,
+                'keterangan_subkriteria' => 'Cukup',
+            ],
+            [
+                'kriteria_id' => 5,
+                'nama_subkriteria' => 'SK Pegawai Negeri',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 5,
+                'nama_subkriteria' => 'Sertifikat Hak Pakai, Petok D, HGB',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 5,
+                'nama_subkriteria' => 'Sertifikat Hak Milik (SHM)',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+            [
+                'kriteria_id' => 6,
+                'nama_subkriteria' => '500.000 - 4.000.000',
+                'nilai_subkriteria' => 1,
+                'keterangan_subkriteria' => 'Kurang',
+            ],
+            [
+                'kriteria_id' => 6,
+                'nama_subkriteria' => '> 4.000.000 - 8.000.000',
+                'nilai_subkriteria' => 2,
+                'keterangan_subkriteria' => 'Cukup',
+            ],
+            [
+                'kriteria_id' => 6,
+                'nama_subkriteria' => '> 8.000.000 - 12.000.000',
+                'nilai_subkriteria' => 3,
+                'keterangan_subkriteria' => 'Cukup Baik',
+            ],
+            [
+                'kriteria_id' => 6,
+                'nama_subkriteria' => '> 12.000.000 - 20.000.000',
+                'nilai_subkriteria' => 4,
+                'keterangan_subkriteria' => 'Baik',
+            ],
+            [
+                'kriteria_id' => 6,
+                'nama_subkriteria' => '> 20.000.000',
+                'nilai_subkriteria' => 5,
+                'keterangan_subkriteria' => 'Sangat Baik',
+            ],
+
+        ];
+        DB::table('subkriteria')->insert($subkriteria);
+    }
+}
